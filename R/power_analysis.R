@@ -101,8 +101,26 @@ compute_power_surface <- function(omega_seq = seq(0.05, 0.5, 0.01),
 #'
 #' @examples
 #' \dontrun{
-#' power_surface <- compute_power_surface()
-#' plot_power_surface(power_surface)
+#' # Compute power surface over interaction strength (ω) and marginal probability (p)
+#' power_surface <- compute_power_surface(
+#'   omega_seq = seq(0.05, 0.50, 0.05),   # Interaction strength: 0.05 to 0.50
+#'   p_seq = seq(0.1, 0.9, 0.1),          # Marginal probability: 0.1 to 0.9
+#'   d = 100,                              # Dimension: 100 variables
+#'   n = 500,                              # Sample size: 500 observations
+#'   n_sims = 50                           # 50 simulation replicates
+#' )
+#'
+#' # Plot the power surface with contours at 50%, 80%, and 95% power
+#' plot_power_surface(
+#'   power_surface,
+#'   contour_levels = c(0.5, 0.8, 0.95)
+#' )
+#'
+#' # Interpretation:
+#' # - Higher regions (larger ω, middle p values) show higher power
+#' # - The 0.95 contour indicates where the method achieves 95% detection power
+#' # - Extreme p values (very low or very high) reduce power
+#' # - Stronger interactions (larger ω) are easier to detect
 #' }
 #'
 #' @export
