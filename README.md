@@ -205,11 +205,11 @@ where:
 
 ### Identifiability
 
-**Theorem (Global Identifiability)**: Under Assumption A (full rank $\rho$, $c_j > 0$ for all $j$, $b_j \geq 0$, $0 < p_j < 1$ for marginal probabilities), the parameter vector $\boldsymbol{\theta} = (\text{vech}(\rho)^\top, \text{vec}(\Omega)^\top, \mathbf{a}^\top, \mathbf{b}^\top, \mathbf{c}^\top)^\top$ is globally identifiable. The proof relies on analyzing the moment equations induced by the quadratic transformation, showing that only one parameter configuration reproduces the marginal and copula structure.
+**Theorem (Global Identifiability)**: Under Assumption A (full rank $\rho$, $c_j > 0$ for all $j$, $b_j \geq 0$, $0 < p_j < 1$ for marginal probabilities), the parameter vector $\boldsymbol{\theta} = [...]
 
 ### Oracle Properties
 
-**Theorem (Oracle Inequality)**: Under high-dimensional conditions (sparsity $s \ll d^2$, restricted eigenvalue condition with constant $\kappa$, mutual incoherence condition with parameter $\mu$), the penalized pseudolikelihood estimator $\hat{\Omega}_n^\lambda$ with $\lambda = C\sqrt{(\log d)/n}$ satisfies:
+**Theorem (Oracle Inequality)**: Under high-dimensional conditions (sparsity $s \ll d^2$, restricted eigenvalue condition with constant $\kappa$, mutual incoherence condition with parameter $\mu$[...]
 
 $$\left\|\hat{\Omega}_n^\lambda - \Omega_0\right\|_F^2 \leq C \frac{s \log d}{n} \quad \text{w.h.p.}$$
 
@@ -217,7 +217,7 @@ with probability at least $1 - 3\exp(-c\log d)$. This means the estimator conver
 
 ### Bootstrap Consistency
 
-**Theorem (Multiplier Bootstrap)**: Under estimation quality assumptions ($\hat{\Omega}_n$ converges at rate faster than $n^{-1/4}$), the multiplier bootstrap process converges weakly to the same tight Gaussian limit as the empirical process, conditional on the data. This justifies using bootstrap confidence intervals for hypothesis testing and supports the validity of bootstrap-based goodness-of-fit tests.
+**Theorem (Multiplier Bootstrap)**: Under estimation quality assumptions ($\hat{\Omega}_n$ converges at rate faster than $n^{-1/4}$), the multiplier bootstrap process converges weakly to the same[...]
 
 ## Genomic Applications
 
@@ -407,8 +407,8 @@ If you use this package in your research, please cite:
 ```bibtex
 @article{Bahraoui2026,
   title={Binary Quadratic Copulas with Genomic Applications},
-  author={Bahraoui, Tarik and Smith, Jane and Johnson, Robert},
-  journal={Journal of Statistical Software},
+  author={Bahraoui, Tarik},
+  journal={..},
   year={2026},
   volume={TBD},
   pages={TBD},
@@ -431,7 +431,7 @@ If you use this package in your research, please cite:
 - **Jalali, A., Johnson, C. C., & Ravikumar, P. K. (2011).** On learning discrete graphical models using group-sparse regularized maximum likelihood. *AISTATS*, 1064-1072.
 
 ### Genomic Applications
-- **Szklarczyk, D., et al. (2021).** STRING v11: protein-protein association networks with increased coverage, supporting functional discovery in genome-wide experimental datasets. *Nucleic Acids Research*, 49(D1), D605-D612. [DOI: 10.1093/nar/gkaa1100]
+- **Szklarczyk, D., et al. (2021).** STRING v11: protein-protein association networks with increased coverage, supporting functional discovery in genome-wide experimental datasets. *Nucleic Acids[...]
 
 ## License
 
