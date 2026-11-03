@@ -18,6 +18,23 @@ hydrological application, and the figures in the paper:
 | `05_figures.R` | All figures |
 | `06_supplementary_tables.R` | Tables S2, S5 (multiplier robustness, oracle comparison) |
 
+## Example figure and results
+
+To create a small, reproducible example of the theoretical diagonal curves
+and a corresponding results table, run this from the repository root:
+
+```sh
+Rscript examples/archimax_figure_results.R
+```
+
+The script writes `figures/example_diagonal.pdf` and
+`results/example_diagonal.csv`. It compares the Gumbel, Clayton, and Frank
+generator cases with the Gumbel-Hougaard Pickands function at the paper's
+`tau = 0.5` calibration. The CSV reports the model parameters, the diagonal
+multiplier `m`, and the theoretical diagonal value at `t = 0.5`. This is an
+illustrative theoretical example, not a result computed from the flood data
+or a Monte Carlo simulation.
+
 ## How to run
 
 1. Clone or download this repository.
